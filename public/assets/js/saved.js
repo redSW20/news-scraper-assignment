@@ -4,7 +4,7 @@ function emptyArticles(){
         "<strong>Message: </strong> You have no saved arcticles, go to the homepage to save some!"+
       "</div>");
     }
-}
+};
 
 emptyArticles();
 
@@ -17,7 +17,7 @@ function deleteArticle(obj){
         //console.log(data);
         location.reload();
     })
-}
+};
 
 function comment(obj){
     $.ajax({
@@ -36,7 +36,7 @@ function comment(obj){
         }
         $("#inputArea").attr("data-id",$(obj).attr("data-id"));
     })
-}
+};
 
 function addComment(obj){
     //console.log($(obj).parent().attr("data-id"));
@@ -53,7 +53,7 @@ function addComment(obj){
     else{
         console.log("Add a comment");
     }
-}
+};
 
 function deleteComment(obj){
     //console.log($(obj).attr("data-id"));
@@ -65,4 +65,4 @@ function deleteComment(obj){
         //console.log(data);
         location.reload();
     })
-}
+};

@@ -5,7 +5,7 @@ function emptyArticles(){
         "<strong>Message: </strong> Click the 'Scrape News' button to scrape articles!"+
       "</div>");
     }
-}
+};
 
 emptyArticles();
 
@@ -37,7 +37,7 @@ function scrapeNews() {
           )
         }
     });
-}
+};
 
 // Send ajax request to store article in database
 function saveArticle(obj){
@@ -59,4 +59,4 @@ function saveArticle(obj){
             $(obj).text("Already Saved").attr("disabled","true");
         }
     })
-}
+};
